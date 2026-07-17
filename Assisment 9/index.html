@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        h1, h2 {
+            color: #000;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* --- Section 1: Match Header & Banner Styles --- */
+        .match-container {
+            font-size: 14px;
+            margin-bottom: 15px;
+            width: fit-content;
+        }
+        .flag-row {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+        .flag-row img {
+            width: 40px;
+            height: auto;
+            margin-right: 10px;
+            border: 1px solid #eaeaea;
+        }
+
+        .banner-container {
+            margin: 20px 0;
+            max-width: 100%;
+            height: 200px; /* Specific height to match example */
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            border-radius: 4px;
+        }
+        .banner-container img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        /* --- Section 2: Styled Table Styles --- */
+        .custom-table {
+            border-collapse: separate;
+            border-spacing: 5px;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .custom-table th {
+            background-color: #4CAF50;
+            color: black;
+            font-weight: bold;
+            padding: 10px 15px;
+            text-align: left;
+        }
+
+        .custom-table td {
+            background-color: #f2f2f2;
+            padding: 10px 15px;
+        }
+
+        /* --- Section 3: HTML Form Styles --- */
+        .form-container {
+            max-width: 300px;
+            margin-top: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 6px;
+            font-size: 16px;
+            border: 1px solid #767676;
+            box-sizing: border-box;
+        }
+
+        .submit-btn {
+            font-size: 16px;
+            padding: 6px 15px;
+            background-color: #e9e9e9;
+            border: 1px solid #767676;
+            cursor: pointer;
+        }
+
+        /* --- Section 4: Layout Structure Elements --- */
+        .all-categories {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .category-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .category-img {
+            width: 60px;
+            height: 60px;
+            background-color: #f2f4f5;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border: 1px solid #ddd;
+        }
+
+        .category-img img {
+            max-width: 45px;
+            max-height: 45px;
+            object-fit: contain;
+        }
+
+        .category-link {
+            color: #002f34;
+            text-decoration: underline;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SECTION 1: MATCH HEADER & BANNER (Based on Image 1) -->
+    <section>
+        <h2>Match Info & Promo Banner</h2>
+        <div class="match-container">
+            <div>Next Match</div>
+            <div class="flag-row">
+                <img src="https://flagcdn.com/w80/gb-eng.png" alt="England Flag">
+                <span>ENG</span>
+            </div>
+            <div>Tomorrow, 12:00 AM</div>
+            <div class="flag-row">
+                <img src="https://flagcdn.com/w80/ar.png" alt="Argentina Flag">
+                <span>ARG</span>
+            </div>
+            <div>Semi-Finals • Mercedes Benz Stadium, Atlanta</div>
+        </div>
+
+        <!-- Horizontal Ad Banner image reference -->
+        <div class="banner-container">
+            <img src="image_49a251.jpg" alt="History Made Banner Advertisement">
+        </div>
+    </section>
+
+    <!-- SECTION 2: STYLED TABLE (Based on Image 3) -->
+    <section>
+        <h2>Styled Data Table</h2>
+        <!-- Table image reference included inside a table structure for styling -->
+        <table class="custom-table">
+            <thead>
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                    <th>Column 3</th>
+                    <th>Column 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="image_49a28a.png" alt="Entry 1 Image Preview">Entry 1</td>
+                    <td>Entry 2</td>
+                    <td>Entry 3</td>
+                    <td>Entry 4</td>
+                </tr>
+                <tr>
+                    <td>Entry 5</td>
+                    <td>Entry 6</td>
+                    <td>Entry 7</td>
+                    <td>Entry 8</td>
+                </tr>
+                <tr>
+                    <td>Entry 9</td>
+                    <td>Entry 10</td>
+                    <td>Entry 11</td>
+                    <td>Entry 12</td>
+                </tr>
+                <tr>
+                    <td>Entry 13</td>
+                    <td>Entry 14</td>
+                    <td>Entry 15</td>
+                    <td>Entry 16</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- SECTION 3: HTML FORM (Based on Image 4) -->
+    <section>
+        <h1>HTML Forms</h1>
+        <!-- Form image reference shown above the form structure -->
+        <img src="image_49a2a5.png" alt="HTML Forms Image Preview" style="width: 200px; margin-bottom: 15px;">
+        
+        <div class="form-container">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- SECTION 4: CATEGORY NAVIGATION LINKS (Based on Images 1 & 2) -->
+    <section>
+        <h2>All Categories (Pakistan)</h2>
+        
+        <ul class="all-categories">
+            <li class="category-item">
+                <div class="category-img"><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=100" alt="Mobiles Icon"></div>
+                <a href="#" class="category-link">Mobiles</a>
+            </li>
+            <li class="category-item">
+                <div class="category-img"><img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=100" alt="Laptops Icon"></div>
+                <a href="#" class="category-link">Laptops</a>
+            </li>
+            <li class="category-item">
+                <div class="category-img"><img src="https://images.unsplash.com/photo-1494145904049-0dca59b4bbad?w=100" alt="Houses Icon"></div>
+                <a href="#" class="category-link">Houses</a>
+            </li>
+            <li class="category-item">
+                <div class="category-img"><img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=100" alt="Tablets Icon"></div>
+                <a href="#" class="category-link">Tablets</a>
+            </li>
+            <li class="category-item">
+                <div class="category-img"><img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=100" alt="Cars Icon"></div>
+                <a href="#" class="category-link">Cars</a>
+            </li>
+            <li class="category-item">
+                <div class="category-img"><img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=100" alt="Motorcycles Icon"></div>
+                <a href="#" class="category-link">Motorcycles</a>
+            </li>
+        </ul>
+    </section>
+
+</body>
+</html>
